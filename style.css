@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: large;
+    align-items: center;
+    font-family: monospace;
+    cursor: url('arrowhead-rounded-outline.svg'), auto;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    background: url("Bubble\ Game\ BG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(192, 192, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro{
+    background: url("Bubble\ Game\ Intro.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease-in-out;
+}
+
+#game{
+    overflow: hidden;
+    width: 90%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    /* display: flex; */
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0),
+    0 0 20px rgba(0, 0, 0, 0.9),
+    0 0 30px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(0, 0, 0, 0.7),
+    0 0 50px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+#upper{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(121, 119, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0);
+}
+
+#re{
+    width: 4%;
+    height: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(174, 243, 255);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+#re:hover{
+    cursor: url('arrowhead-rounded-outline-click.svg'), auto;
+}
+.ele{
+    width : 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+h4{
+    color: rgb(174, 243, 255);
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.value{
+    display: block;
+    background-color: rgb(174, 243, 255);
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+#lower{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(216, 199, 255);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+.points{
+    font-size: small;
+    align-items: start;
+    width: 95%;
+}
+
+#cross{
+    position: fixed;
+    top: 32%;
+    right: 22%;
+    font-size: large;
+}
+
+#begin{
+    width: 70%;
+    height: 80%;
+    background-color: rgba(255, 222, 173, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    flex-direction: column;
+    border: solid rgba(0, 0, 0, 0) 5px;
+    border-radius: 40px;
+}
+
+#cross{
+    padding: 5px;
+}
+
+#cross:hover{
+    cursor: url('arrowhead-rounded-outline-click.svg'), auto;
+}
+
+#button{
+    width: 180px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(255, 173, 67);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0),
+    inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#instructions{
+    margin: 10px;
+    padding: 10px;
+}
+#instructions:hover{
+    cursor: url('arrowhead-rounded-outline-click.svg'), auto;
+}
+
+#button:hover{
+    cursor: url('arrowhead-rounded-outline-click.svg'), auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7),
+    inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.bubble{
+    width: 40px;
+    height: 40px;
+    font-size: large;
+    background-color: rgb(255, 205, 139);
+    border-radius: 50%;
+    margin: 5px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1),
+    inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.bubble:hover{
+    background-color: rgb(134, 237, 255);
+    cursor: url('arrowhead-rounded-outline-click.svg'), auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3),
+}
+
+#over{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
